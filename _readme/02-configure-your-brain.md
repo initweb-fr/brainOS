@@ -10,15 +10,9 @@ Ce fichier, c'est le "mode d'emploi" que Claude utilisera à chaque session pour
 
 ## Comment faire — pas à pas
 
-### 1. Ouvre Claude Code
+### 1. Ouvre une session Claude via l'extension Claude de VS Code.
 
-Dans VS Code, ouvre le terminal (menu **Terminal → New Terminal**, ou Ctrl/Cmd + `) et tape :
-
-```
-claude
-```
-
-Appuie sur Entrée. Claude Code démarre.
+Ouvre l'extension Claude, démarre une nouvelle session. Une page de discussion avec Claude s'ouvre.
 
 ### 2. Copie le gros prompt plus bas
 
@@ -26,7 +20,7 @@ Sélectionne **tout le bloc de code grisé** dans la section "Le prompt d'interv
 
 ### 3. Colle-le dans Claude
 
-Retourne dans ton terminal Claude Code, clique dedans, colle (Cmd/Ctrl + V), puis appuie sur Entrée.
+Retourne dans l'extension Claude Code dans VS Code, clique dedans, colle (Cmd/Ctrl + V), puis appuie sur Entrée.
 
 ### 4. Laisse-toi interviewer
 
@@ -57,7 +51,7 @@ TON RÔLE PENDANT L'INTERVIEW
 - Reformule après chaque réponse pour vérifier que tu as bien compris ("donc si je résume…"). Je corrige si besoin.
 - Creuse quand une réponse est vague. Une interview superficielle produit un CLAUDE.md superficiel.
 - Si je dis quelque chose de surprenant ou contradictoire, note-le mentalement — ça fera partie de ma singularité à capturer.
-- N'écris RIEN dans les fichiers avant la fin de l'interview. Pas de mise à jour intermédiaire.
+- N'écris RIEN dans les fichiers avant la fin de l'interview. Pas de mise à jour intermédiaire. Sauf si je te demande explicitement de sauvegarder ce qui a été partagé ou de mettre en pause.
 
 CE QUE TU DOIS APPRENDRE (dans cet ordre, adapte selon mes réponses)
 
@@ -88,6 +82,7 @@ Puis réécris `CLAUDE.md` :
 - Ajoute en bas une section "Préférences" qui capture mon style (ton, format, longueur, ce qu'il faut éviter)
 - Garde intact le reste (architecture, opérations, conventions, permissions, interdits) — c'est le socle
 - Propose-moi une ou deux règles de plus si tu vois quelque chose de spécifique à mon cas qui mérite d'être codifié
+- Crée un fichier profil-prenom-nom.md avec les informations détaillé que tu as retenu de mon interview.
 
 Ensuite confirme que le fichier est prêt et invite-moi à passer à `README/03-first-ingest.md`.
 

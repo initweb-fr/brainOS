@@ -28,7 +28,7 @@ Au fil des semaines, **ton wiki grandit tout seul**. Tu peux lui poser des quest
 Tu as **deux fenêtres ouvertes côte à côte** :
 
 - **Obsidian** (à gauche) — c'est là que tu lis ton wiki. Les pages, les liens, la vue en graphe.
-- **Claude Code** (à droite, dans une fenêtre de code) — c'est là que tu discutes avec Claude.
+- **Claude Code** (à droite, dans une fenêtre de code, Visual Studio Code par exemple) — c'est là que tu discutes avec Claude.
 
 Tu lui demandes d'analyser une source. Il travaille. Les nouvelles pages apparaissent en direct dans Obsidian. Tu cliques, tu lis, tu challenges, tu poses la question suivante.
 
@@ -48,7 +48,7 @@ Ce dossier est un **guide de démarrage en 5 étapes**. Tu le suivras dans l'ord
 | 4 | **[04-going-further.md](04-going-further.md)** — astuces et ressources | lecture libre |
 | 5 | **[99-cleanup.md](99-cleanup.md)** — nettoyer ce dossier une fois à l'aise | 1 min |
 
-À la fin, tu supprimes ce dossier `README/` — tu n'en as plus besoin.
+À la fin, tu supprimes ce dossier `_readme/` — tu n'en as plus besoin.
 
 ---
 

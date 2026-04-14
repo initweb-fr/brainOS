@@ -104,6 +104,22 @@ Tu as maintenant un historique complet de l'évolution de ta pensée. Et un back
 - **Doc officielle** : [docs.claude.com/en/docs/claude-code](https://docs.claude.com/en/docs/claude-code)
 - **Commandes de base dans Claude** : tape `/help` pour voir toutes les commandes disponibles
 
+### Changer de modèle
+
+Par défaut, Claude Code utilise Claude Sonnet. Pour les tâches complexes (ingests denses, synthèses croisées, analyse approfondie), tu peux passer sur **Claude Opus** — plus puissant, plus lent.
+
+Dans le terminal, tape :
+
+```
+/model
+```
+
+Une liste de modèles disponibles s'affiche. Sélectionne celui qui correspond à tes besoins. Pour revenir au modèle par défaut, relance `/model` et sélectionne Sonnet.
+
+> 💡 Garde Sonnet pour les tâches courantes — Opus pour les moments où tu veux vraiment creuser.
+
+**Petit tips : Tu peux taper "/model opusplan" dans Claude dans le Terminal pour débloquer le combo OpusPlan qui utilise Opus pour réfléchir et Sonnet pour exécuter.**
+
 ### Obsidian
 
 - **Doc officielle** : [help.obsidian.md](https://help.obsidian.md)

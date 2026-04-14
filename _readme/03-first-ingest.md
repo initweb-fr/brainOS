@@ -13,7 +13,7 @@ Une source, c'est n'importe quoi qui contient du savoir que tu veux garder :
 - un transcript d'une réunion ou d'un podcast
 - un simple paragraphe que tu colles
 
-Dans Claude Code, tape simplement :
+Dans Claude, tape simplement :
 
 ```
 /analyze https://exemple.com/un-article-qui-te-plait

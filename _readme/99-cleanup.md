@@ -2,7 +2,7 @@
 
 Ton BrainOS est configuré, tes premières sources sont ingérées, tu as pris tes marques.
 
-**Ce dossier `README/` ne te sert plus.** Il encombre ton vault Obsidian et il est devenu redondant avec ton vrai `CLAUDE.md` personnalisé.
+**Ce dossier `_readme/` ne te sert plus.** Il encombre ton vault Obsidian et il est devenu redondant avec ton vrai `CLAUDE.md` personnalisé.
 
 ---
 
@@ -23,20 +23,20 @@ Si les 4 sont cochés → tu peux supprimer.
 
 ### Option 1 — Dans Obsidian (le plus simple)
 
-1. Dans la barre latérale gauche, clic droit sur le dossier `README`
+1. Dans la barre latérale gauche, clic droit sur le dossier `_readme`
 2. Choisis **"Delete"**
 3. Valide
 
 ### Option 2 — Dans VS Code
 
-1. Clic droit sur le dossier `README` dans l'explorateur
+1. Clic droit sur le dossier `_readme` dans l'explorateur
 2. **"Move to Trash"** (Mac) ou **"Delete"** (Windows/Linux)
 
 ### Option 3 — En ligne de commande
 
 Depuis ton dossier BrainOS :
 ```bash
-rm -rf README/
+rm -rf _readme/
 ```
 
 ### Commit Git (optionnel)
@@ -51,7 +51,7 @@ git commit -m "Cleanup: suppression du dossier d'onboarding"
 
 ## Tu veux garder une trace ?
 
-Si tu préfères ne rien supprimer, tu peux simplement **renommer** le dossier `README/` en `_archive-onboarding/`. Le préfixe `_` le range en bas de l'arborescence d'Obsidian, hors de ton chemin quotidien.
+Si tu préfères ne rien supprimer, tu peux simplement **renommer** le dossier `_readme/` en `_archive-onboarding/`. Le préfixe `_` le range en bas de l'arborescence d'Obsidian, hors de ton chemin quotidien.
 
 ---
 
