@@ -49,16 +49,16 @@ Plus quelques utilitaires : `/daily` pour la note du jour, `/transcript` pour le
 
 ## Démarrage
 
-**[Commence par le dossier `README/`](README/00-start-here.md)** — 5 étapes dans l'ordre, environ 30 à 45 minutes pour tout installer et faire ta première ingestion.
+**[Commence par le dossier `_readme/`](_readme/00-start-here.md)** — 5 étapes dans l'ordre, environ 30 à 45 minutes pour tout installer et faire ta première ingestion.
 
 | Étape | Fichier | Durée |
 |---|---|---|
-| 00 | [Commence ici](README/00-start-here.md) | 5 min |
-| 01 | [Installation](README/01-installation.md) | 15–25 min |
-| 02 | [Configure ton cerveau](README/02-configure-your-brain.md) | 10–15 min |
-| 03 | [Première source, première question](README/03-first-ingest.md) | 10 min |
-| 04 | [Aller plus loin](README/04-going-further.md) | lecture libre |
-| 99 | [Nettoyage](README/99-cleanup.md) | 1 min |
+| 00 | [Commence ici](_readme/00-start-here.md) | 5 min |
+| 01 | [Installation](_readme/01-installation.md) | 15–25 min |
+| 02 | [Configure ton cerveau](_readme/02-configure-your-brain.md) | 10–15 min |
+| 03 | [Première source, première question](_readme/03-first-ingest.md) | 10 min |
+| 04 | [Aller plus loin](_readme/04-going-further.md) | lecture libre |
+| 99 | [Nettoyage](_readme/99-cleanup.md) | 1 min |
 
 ## Prérequis
 
@@ -67,13 +67,13 @@ Plus quelques utilitaires : `/daily` pour la note du jour, `/transcript` pour le
 - **[Claude Code](https://docs.claude.com/en/docs/claude-code)** — abonnement Claude Pro ou Max requis
 - **[Node.js](https://nodejs.org/en/download)** — gratuit — moteur nécessaire à Claude Code
 
-Tout est détaillé dans [01-installation.md](README/01-installation.md), y compris pour les profils non-technophiles.
+Tout est détaillé dans [01-installation.md](_readme/01-installation.md), y compris pour les profils non-technophiles.
 
 ## Structure du projet
 
 ```
 BrainOS/
-├── README/             → Guide de démarrage (à supprimer après onboarding)
+├── _readme/            → Guide de démarrage (à supprimer après onboarding)
 ├── raw/                → Dépose tes sources brutes ici
 ├── wiki/               → Savoir compilé — Claude écrit, tu lis
 │   ├── sources/        → Résumés de sources (1 page = 1 source)
