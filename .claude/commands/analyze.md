@@ -15,12 +15,19 @@ Lire dans cet ordre :
 - `index.md`
 - Les 10 dernières opérations : `grep "^## \[" log.md | tail -10`
 
-### 2. Extraction
+### 2. Résolution de la source
+
+- Si `$ARGUMENTS` est non vide → utiliser cette valeur comme source.
+- Si `$ARGUMENTS` est vide → scanner le dossier `raw/` (Glob `raw/**/*`, hors `raw/assets/`).
+  - Si `raw/` contient plusieurs fichiers, les lister à l'utilisateur et ingérer chacun en séquence.
+  - Si `raw/` est vide, informer l'utilisateur qu'il n'y a rien à ingérer.
+
+### 3. Extraction
 
 Invoquer l'agent `source-extractor` avec la source.
 Récupérer son rapport (métadonnées + contenu + points clés + entités).
 
-### 3. Discussion (mode impliqué — par défaut)
+### 4. Discussion (mode impliqué — par défaut)
 
 **Par défaut, parler à l'utilisateur avant d'écrire quoi que ce soit** :
 - Résumer la thèse en 2–3 phrases
@@ -30,30 +37,30 @@ Récupérer son rapport (métadonnées + contenu + points clés + entités).
 
 **Mode batch** : si l'utilisateur a passé `batch` en argument ou demande explicitement "pas de discussion", sauter cette étape et exécuter directement la suite avec un angle neutre.
 
-### 4. Écriture de la page source
+### 5. Écriture de la page source
 
 Utiliser la skill `write-source` pour créer `wiki/sources/[slug].md` à partir du rapport d'extraction + décisions de la discussion.
 
-### 5. Intégration wiki
+### 6. Intégration wiki
 
 Invoquer l'agent `wiki-integrator` avec le chemin de la page source.
 Il crée/enrichit les pages `topics/` et `concepts/` pertinentes, pose les liens bidirectionnels.
 
-### 6. Entités
+### 7. Entités
 
-Pour chaque entité notable identifiée à l'étape 2, utiliser la skill `write-entity` (création ou mise à jour).
+Pour chaque entité notable identifiée à l'étape 3, utiliser la skill `write-entity` (création ou mise à jour).
 
-### 7. Mise à jour des index
+### 8. Mise à jour des index
 
 Utiliser la skill `update-index` pour :
 - Ajouter la ligne dans les `--index-*.md` des dossiers touchés
 - Mettre à jour les compteurs de `index.md`
 
-### 8. Log
+### 9. Log
 
 Utiliser la skill `append-log` avec `operation: ingest` et un titre court évoquant la source.
 
-### 9. Nettoyage raw/ (optionnel)
+### 10. Nettoyage raw/ (optionnel)
 
 Si la source provenait de `raw/`, demander à l'utilisateur s'il veut supprimer le fichier source (il est maintenant capturé dans `wiki/sources/`).
 
